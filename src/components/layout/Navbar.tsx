@@ -35,7 +35,7 @@ export default function Navbar() {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <span>CreativeDev</span>
+        <span>Ananias</span>
         <span className={styles.logoDot} />
       </div>
       <nav className={styles.nav}>

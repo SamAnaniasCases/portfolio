@@ -11,7 +11,7 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.top}>
           <div className={styles.brand}>
-            <span>CreativeDev</span>
+            <span>Ananias</span>
           </div>
           <ul className={styles.links}>
             <li>
@@ -50,7 +50,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className={styles.bottom}>
-          <p>&copy; {currentYear} CreativeDev. All rights reserved.</p>
+          <p>&copy; {currentYear} Ananias. All rights reserved.</p>
           <p>Designed with vanilla style tokens.</p>
         </div>
       </div>

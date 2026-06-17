@@ -17,6 +17,13 @@
   --text-secondary: #5E4E68;
   --text-muted: #8F8198;
 
+  /* Scrollbar Styling */
+  --scrollbar-width: 10px;
+  --scrollbar-track: var(--bg-primary);
+  --scrollbar-thumb: #D3C5DC;
+  --scrollbar-thumb-hover: #9E8FA7;
+  --scrollbar-thumb-active: var(--primary-500);
+
   /* Functional Colors */
   --success: #0E9F6E;
   --success-bg: #E3FBE3;
@@ -74,6 +81,12 @@
   --secondary-glow: rgba(240, 89, 65, 0.25);
   --btn-primary-hover: #E04D36;
   --btn-primary-active: #BE3144;
+
+  /* Scrollbar Styling */
+  --scrollbar-track: var(--bg-primary);
+  --scrollbar-thumb: #3D264E;
+  --scrollbar-thumb-hover: #5E4E68;
+  --scrollbar-thumb-active: var(--primary-500);
 }
 
 /* Base Styles and Resets */
@@ -81,6 +94,36 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+/* Custom Scrollbar Styles (Global) */
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 9999px;
+  border: 2.5px solid var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--scrollbar-thumb-active);
+}
+
+/* Firefox Scrollbar Support */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
 
 html,

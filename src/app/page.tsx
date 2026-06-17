@@ -196,7 +196,7 @@ export default function Home() {
                 <EnvelopeSimple size={18} weight="duotone" color="var(--btn-primary-hover)" />
                 <span className={styles.infoLabel}>Email</span>
               </div>
-              <span className={styles.infoValue}>hello@creativedev.com</span>
+              <span className={styles.infoValue}>hello@ananias.dev</span>
             </div>
             <div className={styles.infoItem}>
               <div style={{ display: "flex", alignItems: "center", gap: "var(--space-xs)" }}>

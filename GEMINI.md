@@ -159,6 +159,7 @@ All layout designs must use these CSS variables defined in [globals.css](file://
 ---
 
 ## 7. Change Log
+* **2026-06-17:** Refined global scrollbar styling, aligning track, thumb, hover, and active states with Light & Dark themes.
 * **2026-06-16:** Initial portfolio project architecture design system, roadmap, and TypeScript structure planning finalized.
 
 ---

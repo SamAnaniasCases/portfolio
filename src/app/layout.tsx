@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "CreativeDev | Interactive Portfolio",
+  title: "Ananias | Interactive Portfolio",
   description: "A premium, interactive personal branding platform showcasing development skills, projects, and blogs.",
 };
 
