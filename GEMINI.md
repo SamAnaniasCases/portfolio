@@ -12,6 +12,8 @@ A premium, modern, highly interactive, and professional portfolio website. It sh
 * **Programming Language:** TypeScript (strict mode enabled)
 * **Styling:** Vanilla CSS Modules with root variables (zero-runtime overhead)
 * **Animation Library:** Framer Motion (dynamic micro-interactions & layout animations)
+* **Icons Library:** Phosphor Icons (100% free, flexible styles including Duotone, Thin, and Bold React components)
+* **Typography & Fonts:** Inter (Google Fonts - body text), Array (Fontshare - H1 & display stats), Hoover (Fontshare - sub-headings)
 * **Database & Services:** Supabase (PostgreSQL with Row-Level Security)
 * **Authentication:** Supabase Auth (OAuth GitHub/LinkedIn & Email OTP)
 * **Content Source (CMS):** Local MDX files (for project pages and blog posts)
@@ -128,6 +130,10 @@ All layout designs must use these CSS variables defined in [globals.css](file://
   * `--space-lg`: `1.5rem` (24px)
   * `--space-xl`: `2rem` (32px)
   * `--space-2xl`: `3rem` (48px)
+* **Typography & Fonts:**
+  * `--font-sans`: `Inter` (Google Fonts, body text and interactive controls)
+  * `--font-display`: `'Array'` (Fontshare dot-matrix display, H1 and stats stats numbers)
+  * `--font-heading`: `'Hoover'` (Fontshare monolinear slab-serif, sub-headings H2-H6)
 * **Typography Scale (Major Third):**
   * `--text-xs`: `0.8rem`
   * `--text-sm`: `0.875rem`

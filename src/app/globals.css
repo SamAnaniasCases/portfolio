@@ -53,6 +53,10 @@
   --text-xl: 1.5rem;
   --text-2xl: 2rem;
   --text-3xl: 3rem;
+
+  /* Font Families */
+  --font-display: 'Array', monospace;
+  --font-heading: 'Hoover', sans-serif;
   
   /* Transitions */
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -106,4 +110,12 @@ a {
 button, input, textarea {
   font-family: inherit;
   color: inherit;
+}
+
+h1 {
+  font-family: var(--font-display, monospace);
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading, sans-serif);
 }

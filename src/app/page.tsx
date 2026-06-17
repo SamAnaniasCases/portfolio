@@ -1,5 +1,18 @@
+"use client";
+
 import styles from "./page.module.css";
 import ContactForm from "@/features/contact/ContactForm";
+import { 
+  Briefcase, 
+  Code, 
+  ThumbsUp, 
+  Certificate, 
+  ArrowUpRight, 
+  MapPin, 
+  EnvelopeSimple, 
+  ShareNetwork,
+  ArrowRight
+} from "@phosphor-icons/react";
 
 export default function Home() {
   const skillsData = [
@@ -54,7 +67,10 @@ export default function Home() {
         </p>
         <div className={styles.ctas}>
           <a href="#projects">
-            <button className={styles.btnPrimary}>View Projects</button>
+            <button className={styles.btnPrimary}>
+              View Projects
+              <ArrowRight size={16} weight="bold" />
+            </button>
           </a>
           <a href="#contact">
             <button className={styles.btnSecondary}>Contact Me</button>
@@ -79,18 +95,22 @@ export default function Home() {
           </div>
           <div className={styles.aboutCards}>
             <div className={styles.aboutCard}>
+              <Briefcase size={28} weight="duotone" color="var(--btn-primary-hover)" />
               <div className={styles.cardNum}>5+</div>
               <div className={styles.cardLabel}>Years Experience</div>
             </div>
             <div className={styles.aboutCard}>
+              <Code size={28} weight="duotone" color="var(--btn-primary-hover)" />
               <div className={styles.cardNum}>30+</div>
               <div className={styles.cardLabel}>Projects Delivered</div>
             </div>
             <div className={styles.aboutCard}>
+              <ThumbsUp size={28} weight="duotone" color="var(--btn-primary-hover)" />
               <div className={styles.cardNum}>100%</div>
               <div className={styles.cardLabel}>Client Satisfaction</div>
             </div>
             <div className={styles.aboutCard}>
+              <Certificate size={28} weight="duotone" color="var(--btn-primary-hover)" />
               <div className={styles.cardNum}>15+</div>
               <div className={styles.cardLabel}>Certifications</div>
             </div>
@@ -147,7 +167,8 @@ export default function Home() {
                   className={styles.projectLink}
                   aria-label={`View live website for ${project.title}`}
                 >
-                  View Live &rarr;
+                  View Live
+                  <ArrowUpRight size={16} weight="bold" />
                 </a>
               </div>
             </div>
@@ -164,15 +185,24 @@ export default function Home() {
         <div className={styles.contactWrapper}>
           <div className={styles.contactInfo}>
             <div className={styles.infoItem}>
-              <span className={styles.infoLabel}>Location</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "var(--space-xs)" }}>
+                <MapPin size={18} weight="duotone" color="var(--btn-primary-hover)" />
+                <span className={styles.infoLabel}>Location</span>
+              </div>
               <span className={styles.infoValue}>Remote / Global</span>
             </div>
             <div className={styles.infoItem}>
-              <span className={styles.infoLabel}>Email</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "var(--space-xs)" }}>
+                <EnvelopeSimple size={18} weight="duotone" color="var(--btn-primary-hover)" />
+                <span className={styles.infoLabel}>Email</span>
+              </div>
               <span className={styles.infoValue}>hello@creativedev.com</span>
             </div>
             <div className={styles.infoItem}>
-              <span className={styles.infoLabel}>Socials</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "var(--space-xs)" }}>
+                <ShareNetwork size={18} weight="duotone" color="var(--btn-primary-hover)" />
+                <span className={styles.infoLabel}>Socials</span>
+              </div>
               <span className={styles.infoValue}>GitHub / LinkedIn</span>
             </div>
           </div>

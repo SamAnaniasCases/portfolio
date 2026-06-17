@@ -1,3 +1,6 @@
+"use client";
+
+import { GithubLogo, LinkedinLogo, TwitterLogo } from "@phosphor-icons/react";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -17,8 +20,9 @@ export default function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className={styles.link}
+                aria-label="GitHub Profile"
               >
-                GitHub
+                <GithubLogo size={20} weight="regular" />
               </a>
             </li>
             <li>
@@ -27,8 +31,9 @@ export default function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className={styles.link}
+                aria-label="LinkedIn Profile"
               >
-                LinkedIn
+                <LinkedinLogo size={20} weight="regular" />
               </a>
             </li>
             <li>
@@ -37,8 +42,9 @@ export default function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className={styles.link}
+                aria-label="Twitter Profile"
               >
-                Twitter
+                <TwitterLogo size={20} weight="regular" />
               </a>
             </li>
           </ul>

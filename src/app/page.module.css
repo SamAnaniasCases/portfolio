@@ -90,6 +90,9 @@
   transition: var(--transition-smooth);
   border: none;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
 }
 
 .btnPrimary:hover {
@@ -107,6 +110,9 @@
   font-weight: 600;
   transition: var(--transition-smooth);
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
 }
 
 .btnSecondary:hover {
@@ -143,7 +149,11 @@
   border: 1px solid var(--bg-border);
   border-radius: var(--radius-md);
   padding: var(--space-lg);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
   transition: var(--transition-smooth);
 }
 
@@ -154,16 +164,18 @@
 }
 
 .cardNum {
+  font-family: var(--font-display);
   font-size: var(--text-2xl);
   font-weight: 800;
   color: var(--primary-500);
+  line-height: 1;
 }
 
 .cardLabel {
   font-size: var(--text-xs);
   color: var(--text-muted);
   font-weight: 500;
-  margin-top: var(--space-xs);
+  text-align: center;
 }
 
 /* 3. Skills Section */
